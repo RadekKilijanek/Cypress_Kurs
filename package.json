@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RadekKilijanek/Cypress_Kurs#readme",
   "devDependencies": {
-    "cypress": "^12.9.0"
+    "cypress": "^12.9.0",
+    "@faker-js/faker": "^7.6.0"
   }
 }
