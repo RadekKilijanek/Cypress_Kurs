@@ -1,0 +1,22 @@
+{
+  "name": "cypress_kurs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadekKilijanek/Cypress_Kurs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RadekKilijanek/Cypress_Kurs/issues"
+  },
+  "homepage": "https://github.com/RadekKilijanek/Cypress_Kurs#readme",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  }
+}
