@@ -1,3 +1,5 @@
+import "cypress-localstorage-commands"
+
 describe('my first scenario', () => {
     it('visit main page and click top menu button', function(){
         cy.visit('https://fabrykatestow.pl')
@@ -24,5 +26,17 @@ describe('iframe test', () => {
         .then(cy.wrap)
 
         iframeTest.find(iframeButton).click()
+    })
+})
+
+describe('localstorage and session storage', () => {
+    it('get data from local and session storage', function() {
+        cy.clearAllLocalStorage()
+        cy.clearAllSessionStorage()
+
+        cy.getAllLocalStorage()
+        cy.getAllSessionStorage()
+
+        cy.setLocalStorage('test', '1')
     })
 })
