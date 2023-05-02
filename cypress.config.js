@@ -5,8 +5,6 @@ module.exports = defineConfig({
   viewportWidth: 1200,
   
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    baseUrl: 'https://simpletestsite.fabrykatestow.pl/'
   },
 });
