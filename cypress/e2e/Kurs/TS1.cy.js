@@ -6,3 +6,23 @@ describe('my first scenario', () => {
         cy.url().should('eq', 'https://fabrykatestow.pl/ciekawostki/')
     })
 })
+
+const url = 'http://simpletestsite.fabrykatestow.pl/'
+const iframeHeader = '#iframe-header'
+const iframe = 'iframe'
+const iframeButton = '#simpleButton1'
+
+describe('iframe test', () => {
+    it('iframe test', function() {
+        cy.visit(url)
+
+        cy.get(iframeHeader).click()
+
+        const iframeTest = cy.get(iframe)
+        .its('0.contentDocument.body')
+        .should('be.visible')
+        .then(cy.wrap)
+
+        iframeTest.find(iframeButton).click()
+    })
+})
