@@ -40,3 +40,13 @@ describe('localstorage and session storage', () => {
         cy.setLocalStorage('test', '1')
     })
 })
+
+const urlFabrykaTestow = 'https://fabrykatestow.pl/'
+
+describe('cookies', () => {
+    it('should work with cookies', function() {
+        cy.visit(urlFabrykaTestow)
+        cy.clearAllCookies()
+        cy.setCookie('foo', 'bar')
+    })
+})
